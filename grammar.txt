@@ -1,0 +1,10 @@
+Program -> Statement*
+
+Statement -> Trait
+
+Trait -> 'trait' Name 'do' TraitMembers 'end'
+TraitMembers -> TraitMember *
+TraitMember -> PropertyMember
+PropertyMember -> 'val' Name | 'var' Name
+
+Name -> [_A-Za-z]:alpha:+
